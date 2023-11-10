@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MegaPixel</string>
+    <string name="str_altezza">Altezza</string>
+    <string name="str_larghezza">Larghezza</string>
+    <string name="str_calcola">Calcola</string>
+    <string name="str_megapixel">Megapixel</string>
+</resources>

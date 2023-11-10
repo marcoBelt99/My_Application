@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout Relative -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editLarghezza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editAltezza"
+        android:layout_toRightOf="@+id/txtLarghezza"
+        android:inputType="number"/> <!-- permette di inserire solo cifre numeriche -->
+
+    <EditText
+        android:id="@+id/editAltezza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtLarghezza"
+        android:inputType="number"/> <!-- permette di inserire solo cifre numeriche -->
+
+    <Button
+        android:id="@+id/btnCalcola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editLarghezza"
+        android:onClick="calcolaRisultato"
+        android:text="@string/str_calcola" />
+
+
+    <TextView
+        android:id="@+id/txtRisultato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtMegapixel"
+        android:layout_alignLeft="@+id/editLarghezza"
+        android:layout_alignRight="@+id/editLarghezza"
+        android:layout_alignTop="@+id/txtMegapixel"
+        android:background="#00CCCC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtMegapixel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalcola"
+        android:layout_margin="17dp"
+        android:text="@string/str_megapixel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         />
+
+    <TextView
+        android:id="@+id/txtAltezza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editAltezza"
+        android:layout_alignParentLeft="true"
+        android:text="@string/str_altezza"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/txtLarghezza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCalcola"
+        android:layout_alignParentLeft="true"
+        android:text="@string/str_larghezza"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+</RelativeLayout>
